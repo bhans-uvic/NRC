@@ -1,0 +1,23 @@
+data:
+  dataDir: "/Data"
+  locations:
+    - path: "/DiscoveryPassage"
+      breakString: "## END HEADER"
+      ext: "_noMeta.csv"
+      groupedPath: "/Grouped"
+      mergeMethod: "inner"
+      oldControlCol: "Time UTC (yyyy-mm-ddThh:mm:ss.fffZ)"
+      newControlCol: "Time UTC"
+      targetPrm: "Chlorophyll (ug/l)"
+      removeStringCol:
+        - "Flag"
+        - "Count"
+      featureGroupPaths:
+        - "/CTD_Aml"
+        - "/Fluorometer"
+        - "/OxygenAanderaa"
+      mergedFactorRemove:
+        - "Instrument Clock (Gregorian days since 19700101T000000Z)"
+        - "Sound Speed (m/s)"
+        - "Test Biofouling (ON/OFF)"
+        - "Oxygen Concentration Uncorrected (ml/l)"
