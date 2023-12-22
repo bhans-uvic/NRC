@@ -78,6 +78,7 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+
 # IPython
 profile_default/
 ipython_config.py
@@ -127,6 +128,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+#MacOS Specific Files
+.DS_Store
 
 # Spyder project settings
 .spyderproject
